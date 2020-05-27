@@ -1,0 +1,10 @@
+<h1> As-tu vu ces MAGNIFIQUES RESTOS?</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+  <br>  <br>
+  <%= link_to 'Create a new restaurant poto', new_restaurant_path %>
+
+</ul>
